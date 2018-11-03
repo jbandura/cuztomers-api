@@ -1,0 +1,21 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "password",
+  "database": "cuztomers",
+  "synchronize": true,
+  "entities": [
+    "src/entities/*.ts"
+  ],
+  "migrations": [
+    "src/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/migrations"
+  },
+  "logging": ["query", "error", "schema", "warn"]
+}
